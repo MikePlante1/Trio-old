@@ -170,7 +170,7 @@ final class OpenAPS {
             var useOverride = overrideArray.first?.enabled ?? false
             var overridePercentage = Decimal(overrideArray.first?.percentage ?? 100)
             var unlimited = overrideArray.first?.indefinite ?? true
-            var disableSMBs = overrideArray.first?.smbIsOff ?? false
+            var disableSMBs = overrideArray.first?.smbIsDisabled ?? false
 
             let currentTDD = (uniqueEvents.last?.tdd ?? 0) as Decimal
 
@@ -254,12 +254,11 @@ final class OpenAPS {
                     unlimited: unlimited,
                     hbt: hbt_,
                     overrideTarget: overrideTarget,
-                    smbIsOff: disableSMBs,
                     advancedSettings: overrideArray.first?.advancedSettings ?? false,
                     isfAndCr: overrideArray.first?.isfAndCr ?? false,
                     isf: overrideArray.first?.isf ?? false,
                     cr: overrideArray.first?.cr ?? false,
-                    smbIsAlwaysOff: overrideArray.first?.smbIsAlwaysOff ?? false,
+                    smbIsDisabled: overrideArray.first?.smbIsDisabled ?? false,
                     start: (overrideArray.first?.start ?? 0) as Decimal,
                     end: (overrideArray.first?.end ?? 0) as Decimal,
                     smbMinutes: (overrideArray.first?.smbMinutes ?? smbMinutes) as Decimal,
@@ -282,12 +281,11 @@ final class OpenAPS {
                     unlimited: unlimited,
                     hbt: hbt_,
                     overrideTarget: overrideTarget,
-                    smbIsOff: disableSMBs,
                     advancedSettings: overrideArray.first?.advancedSettings ?? false,
                     isfAndCr: overrideArray.first?.isfAndCr ?? false,
                     isf: overrideArray.first?.isf ?? false,
                     cr: overrideArray.first?.cr ?? false,
-                    smbIsAlwaysOff: overrideArray.first?.smbIsAlwaysOff ?? false,
+                    smbIsDisabled: overrideArray.first?.smbIsDisabled ?? false,
                     start: (overrideArray.first?.start ?? 0) as Decimal,
                     end: (overrideArray.first?.end ?? 0) as Decimal,
                     smbMinutes: (overrideArray.first?.smbMinutes ?? smbMinutes) as Decimal,

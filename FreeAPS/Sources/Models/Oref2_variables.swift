@@ -13,12 +13,11 @@ struct Oref2_variables: JSON, Equatable {
     var unlimited: Bool
     var hbt: Decimal
     var overrideTarget: Decimal
-    var smbIsOff: Bool
     var advancedSettings: Bool
     var isfAndCr: Bool
     var isf: Bool
     var cr: Bool
-    var smbIsAlwaysOff: Bool
+    var smbIsDisabled: Bool
     var start: Decimal
     var end: Decimal
     var smbMinutes: Decimal
@@ -37,12 +36,11 @@ struct Oref2_variables: JSON, Equatable {
         unlimited: Bool,
         hbt: Decimal,
         overrideTarget: Decimal,
-        smbIsOff: Bool,
         advancedSettings: Bool,
         isfAndCr: Bool,
         isf: Bool,
         cr: Bool,
-        smbIsAlwaysOff: Bool,
+        smbIsDisabled: Bool,
         start: Decimal,
         end: Decimal,
         smbMinutes: Decimal,
@@ -60,12 +58,11 @@ struct Oref2_variables: JSON, Equatable {
         self.unlimited = unlimited
         self.hbt = hbt
         self.overrideTarget = overrideTarget
-        self.smbIsOff = smbIsOff
         self.advancedSettings = advancedSettings
         self.isfAndCr = isfAndCr
         self.isf = isf
         self.cr = cr
-        self.smbIsAlwaysOff = smbIsAlwaysOff
+        self.smbIsDisabled = smbIsDisabled
         self.start = start
         self.end = end
         self.smbMinutes = smbMinutes
@@ -87,12 +84,11 @@ extension Oref2_variables {
         case unlimited
         case hbt
         case overrideTarget
-        case smbIsOff
         case advancedSettings
         case isfAndCr
         case isf
         case cr
-        case smbIsAlwaysOff
+        case smbIsDisabled
         case start
         case end
         case smbMinutes

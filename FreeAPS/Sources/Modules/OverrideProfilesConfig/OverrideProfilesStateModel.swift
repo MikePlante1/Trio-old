@@ -9,7 +9,6 @@ extension OverrideProfilesConfig {
         @Published var duration: Decimal = 0
         @Published var target: Decimal = 0
         @Published var override_target: Bool = false
-        @Published var smbIsOff: Bool = false
         @Published var id: String = ""
         @Published var profileName: String = ""
         @Published var isPreset: Bool = false
@@ -19,9 +18,9 @@ extension OverrideProfilesConfig {
         @Published var isfAndCr: Bool = true
         @Published var isf: Bool = true
         @Published var cr: Bool = true
-        @Published var smbIsAlwaysOff: Bool = false
+        @Published var smbIsDisabled: Bool = false
         @Published var start: Decimal = 0
-        @Published var end: Decimal = 23
+        @Published var end: Decimal = 0
         @Published var smbMinutes: Decimal = 0
         @Published var uamMinutes: Decimal = 0
         @Published var defaultSmbMinutes: Decimal = 0
@@ -45,7 +44,6 @@ extension OverrideProfilesConfig {
                 saveOverride.indefinite = self._indefinite
                 saveOverride.percentage = self.percentage
                 saveOverride.enabled = true
-                saveOverride.smbIsOff = self.smbIsOff
                 if self.isPreset {
                     saveOverride.isPreset = true
                     saveOverride.id = id
@@ -66,11 +64,11 @@ extension OverrideProfilesConfig {
                         saveOverride.isf = isf
                         saveOverride.cr = cr
                     } else { saveOverride.isfAndCr = true }
-                    if smbIsAlwaysOff {
-                        saveOverride.smbIsAlwaysOff = true
+                    if smbIsDisabled {
+                        saveOverride.smbIsDisabled = true
                         saveOverride.start = start as NSDecimalNumber
                         saveOverride.end = end as NSDecimalNumber
-                    } else { saveOverride.smbIsAlwaysOff = false }
+                    } else { saveOverride.smbIsDisabled = false }
 
                     saveOverride.smbMinutes = smbMinutes as NSDecimalNumber
                     saveOverride.uamMinutes = uamMinutes as NSDecimalNumber
@@ -85,7 +83,6 @@ extension OverrideProfilesConfig {
                 saveOverride.duration = self.duration as NSDecimalNumber
                 saveOverride.indefinite = self._indefinite
                 saveOverride.percentage = self.percentage
-                saveOverride.smbIsOff = self.smbIsOff
                 saveOverride.name = self.profileName
                 id = UUID().uuidString
                 self.isPreset.toggle()
@@ -107,11 +104,11 @@ extension OverrideProfilesConfig {
                         saveOverride.isf = isf
                         saveOverride.cr = cr
                     } else { saveOverride.isfAndCr = true }
-                    if smbIsAlwaysOff {
-                        saveOverride.smbIsAlwaysOff = true
+                    if smbIsDisabled {
+                        saveOverride.smbIsDisabled = true
                         saveOverride.start = start as NSDecimalNumber
                         saveOverride.end = end as NSDecimalNumber
-                    } else { smbIsAlwaysOff = false }
+                    } else { smbIsDisabled = false }
 
                     saveOverride.smbMinutes = smbMinutes as NSDecimalNumber
                     saveOverride.uamMinutes = uamMinutes as NSDecimalNumber
@@ -134,7 +131,7 @@ extension OverrideProfilesConfig {
                 saveOverride.indefinite = profile.indefinite
                 saveOverride.percentage = profile.percentage
                 saveOverride.enabled = true
-                saveOverride.smbIsOff = profile.smbIsOff
+                saveOverride.smbIsDisabled = profile.smbIsDisabled
                 saveOverride.isPreset = true
                 saveOverride.date = Date()
                 saveOverride.target = profile.target
@@ -147,11 +144,11 @@ extension OverrideProfilesConfig {
                         saveOverride.isf = profile.isf
                         saveOverride.cr = profile.cr
                     } else { saveOverride.isfAndCr = true }
-                    if profile.smbIsAlwaysOff {
-                        saveOverride.smbIsAlwaysOff = true
+                    if profile.smbIsDisabled {
+                        saveOverride.smbIsDisabled = true
                         saveOverride.start = profile.start
                         saveOverride.end = profile.end
-                    } else { saveOverride.smbIsAlwaysOff = false }
+                    } else { saveOverride.smbIsDisabled = false }
 
                     saveOverride.smbMinutes = (profile.smbMinutes ?? 0) as NSDecimalNumber
                     saveOverride.uamMinutes = (profile.uamMinutes ?? 0) as NSDecimalNumber
@@ -172,17 +169,16 @@ extension OverrideProfilesConfig {
                 percentage = overrideArray.first?.percentage ?? 100
                 _indefinite = overrideArray.first?.indefinite ?? true
                 duration = (overrideArray.first?.duration ?? 0) as Decimal
-                smbIsOff = overrideArray.first?.smbIsOff ?? false
                 advancedSettings = overrideArray.first?.advancedSettings ?? false
                 isfAndCr = overrideArray.first?.isfAndCr ?? true
-                smbIsAlwaysOff = overrideArray.first?.smbIsAlwaysOff ?? false
+                smbIsDisabled = overrideArray.first?.smbIsDisabled ?? false
 
                 if advancedSettings {
                     if !isfAndCr {
                         isf = overrideArray.first?.isf ?? false
                         cr = overrideArray.first?.cr ?? false
                     }
-                    if smbIsAlwaysOff {
+                    if smbIsDisabled {
                         start = (overrideArray.first?.start ?? 0) as Decimal
                         end = (overrideArray.first?.end ?? 0) as Decimal
                     }
@@ -221,7 +217,7 @@ extension OverrideProfilesConfig {
                     duration = 0
                     target = 0
                     override_target = false
-                    smbIsOff = false
+                    smbIsDisabled = false
                     advancedSettings = false
                     smbMinutes = defaultSmbMinutes
                     uamMinutes = defaultUamMinutes
@@ -236,7 +232,7 @@ extension OverrideProfilesConfig {
             duration = 0
             target = 0
             override_target = false
-            smbIsOff = false
+            smbIsDisabled = false
             advancedSettings = false
             coredataContext.perform { [self] in
                 let profiles = Override(context: self.coredataContext)
