@@ -239,8 +239,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "388E595725AD948C0019842D"
-               BuildableName = "FreeAPS.app"
-               BlueprintName = "FreeAPS"
+               BuildableName = "Trio.app"
+               BlueprintName = "Trio"
                ReferencedContainer = "container:FreeAPS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -257,8 +257,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "38FCF3EC25E9028E0078B0D1"
-               BuildableName = "FreeAPSTests.xctest"
-               BlueprintName = "FreeAPSTests"
+               BuildableName = "TrioTests.xctest"
+               BlueprintName = "TrioTests"
                ReferencedContainer = "container:FreeAPS.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -359,8 +359,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "388E595725AD948C0019842D"
-            BuildableName = "FreeAPS.app"
-            BlueprintName = "FreeAPS"
+            BuildableName = "Trio.app"
+            BlueprintName = "Trio"
             ReferencedContainer = "container:FreeAPS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -383,8 +383,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "388E595725AD948C0019842D"
-            BuildableName = "FreeAPS.app"
-            BlueprintName = "FreeAPS"
+            BuildableName = "Trio.app"
+            BlueprintName = "Trio"
             ReferencedContainer = "container:FreeAPS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

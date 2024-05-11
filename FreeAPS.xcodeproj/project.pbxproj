@@ -189,7 +189,7 @@
 		38E87401274F77E400975559 /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E873FD274F761800975559 /* CoreNFC.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		38E87403274F78C000975559 /* libswiftCoreNFC.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E87402274F78C000975559 /* libswiftCoreNFC.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
 		38E87408274F9AD000975559 /* UserNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E87407274F9AD000975559 /* UserNotificationsManager.swift */; };
-		38E8752527554D5700975559 /* FreeAPSWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 38E8752427554D5700975559 /* FreeAPSWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		38E8752527554D5700975559 /* TrioWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 38E8752427554D5700975559 /* TrioWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		38E8752A27554D5700975559 /* FreeAPSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8752927554D5700975559 /* FreeAPSApp.swift */; };
 		38E8752C27554D5700975559 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8752B27554D5700975559 /* MainView.swift */; };
 		38E8752E27554D5700975559 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8752D27554D5700975559 /* NotificationController.swift */; };
@@ -197,7 +197,7 @@
 		38E8753227554D5700975559 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8753127554D5700975559 /* ComplicationController.swift */; };
 		38E8753427554D5800975559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E8753327554D5800975559 /* Assets.xcassets */; };
 		38E8753727554D5900975559 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E8753627554D5800975559 /* Preview Assets.xcassets */; };
-		38E8753C27554D5900975559 /* FreeAPSWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 38E8751C27554D5500975559 /* FreeAPSWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		38E8753C27554D5900975559 /* TrioWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 38E8751C27554D5500975559 /* TrioWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		38E8754727554DF100975559 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F37827261260DC009DB701 /* Color+Extensions.swift */; };
 		38E8754A275550BB00975559 /* CarbsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E87549275550BB00975559 /* CarbsView.swift */; };
 		38E8754C2755548F00975559 /* WatchStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8754B2755548F00975559 /* WatchStateModel.swift */; };
@@ -252,7 +252,7 @@
 		6B1A8D1E2B14D91600E76752 /* LiveActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1A8D1D2B14D91600E76752 /* LiveActivityBundle.swift */; };
 		6B1A8D202B14D91600E76752 /* LiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1A8D1F2B14D91600E76752 /* LiveActivity.swift */; };
 		6B1A8D242B14D91700E76752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1A8D232B14D91700E76752 /* Assets.xcassets */; };
-		6B1A8D282B14D91700E76752 /* LiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6B1A8D172B14D91600E76752 /* LiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6B1A8D282B14D91700E76752 /* TrioLiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6B1A8D172B14D91600E76752 /* TrioLiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6B1A8D2E2B156EEF00E76752 /* LiveActivityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1A8D2D2B156EEF00E76752 /* LiveActivityBridge.swift */; };
 		6B1F539F9FF75646D1606066 /* SnoozeDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A708CDB546692C2230B385 /* SnoozeDataFlow.swift */; };
 		6B9625766B697D1C98E455A2 /* PumpSettingsEditorStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72778B68C3004F71F6E79BDC /* PumpSettingsEditorStateModel.swift */; };
@@ -438,7 +438,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				38E8753C27554D5900975559 /* FreeAPSWatch.app in Embed Watch Content */,
+				38E8753C27554D5900975559 /* TrioWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +449,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				38E8752527554D5700975559 /* FreeAPSWatch WatchKit Extension.appex in Embed App Extensions */,
+				38E8752527554D5700975559 /* TrioWatch WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +460,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				6B1A8D282B14D91700E76752 /* LiveActivityExtension.appex in Embed Foundation Extensions */,
+				6B1A8D282B14D91700E76752 /* TrioLiveActivityExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,7 +641,7 @@
 		3883583325EEB38000E024B2 /* PumpSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PumpSettings.swift; sourceTree = "<group>"; };
 		388358C725EEF6D200E024B2 /* BasalProfileEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasalProfileEntry.swift; sourceTree = "<group>"; };
 		38887CCD25F5725200944304 /* IOBEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOBEntry.swift; sourceTree = "<group>"; };
-		388E595825AD948C0019842D /* FreeAPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeAPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		388E595825AD948C0019842D /* Trio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		388E595B25AD948C0019842D /* FreeAPSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeAPSApp.swift; sourceTree = "<group>"; };
 		388E596425AD948E0019842D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		388E596B25AD95110019842D /* OpenAPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAPS.swift; sourceTree = "<group>"; };
@@ -704,9 +704,9 @@
 		38E873FD274F761800975559 /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
 		38E87402274F78C000975559 /* libswiftCoreNFC.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCoreNFC.tbd; path = usr/lib/swift/libswiftCoreNFC.tbd; sourceTree = SDKROOT; };
 		38E87407274F9AD000975559 /* UserNotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsManager.swift; sourceTree = "<group>"; };
-		38E8751C27554D5500975559 /* FreeAPSWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeAPSWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E8751C27554D5500975559 /* TrioWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrioWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E8751E27554D5700975559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		38E8752427554D5700975559 /* FreeAPSWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FreeAPSWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E8752427554D5700975559 /* TrioWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TrioWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E8752927554D5700975559 /* FreeAPSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeAPSApp.swift; sourceTree = "<group>"; };
 		38E8752B27554D5700975559 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		38E8752D27554D5700975559 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -741,7 +741,7 @@
 		38F3783A2613555C009DB701 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		38F3B2EE25ED8E2A005C48AA /* TempTargetsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempTargetsStorage.swift; sourceTree = "<group>"; };
 		38FCF3D525E8FDF40078B0D1 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
-		38FCF3ED25E9028E0078B0D1 /* FreeAPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeAPSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38FCF3ED25E9028E0078B0D1 /* TrioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FCF3F125E9028E0078B0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38FCF3F825E902C20078B0D1 /* FileStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorageTests.swift; sourceTree = "<group>"; };
 		38FCF3FC25E997A80078B0D1 /* PumpHistoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PumpHistoryStorage.swift; sourceTree = "<group>"; };
@@ -770,7 +770,7 @@
 		67F94DD2853CF42BA4E30616 /* BasalProfileEditorDataFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BasalProfileEditorDataFlow.swift; sourceTree = "<group>"; };
 		680C4420C9A345D46D90D06C /* ManualTempBasalProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ManualTempBasalProvider.swift; sourceTree = "<group>"; };
 		6B1A8D012B14D88B00E76752 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
-		6B1A8D172B14D91600E76752 /* LiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1A8D172B14D91600E76752 /* TrioLiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TrioLiveActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B1A8D182B14D91600E76752 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		6B1A8D1A2B14D91600E76752 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		6B1A8D1D2B14D91600E76752 /* LiveActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityBundle.swift; sourceTree = "<group>"; };
@@ -1538,11 +1538,11 @@
 		388E595925AD948C0019842D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				388E595825AD948C0019842D /* FreeAPS.app */,
-				38FCF3ED25E9028E0078B0D1 /* FreeAPSTests.xctest */,
-				38E8751C27554D5500975559 /* FreeAPSWatch.app */,
-				38E8752427554D5700975559 /* FreeAPSWatch WatchKit Extension.appex */,
-				6B1A8D172B14D91600E76752 /* LiveActivityExtension.appex */,
+				388E595825AD948C0019842D /* Trio.app */,
+				38FCF3ED25E9028E0078B0D1 /* TrioTests.xctest */,
+				38E8751C27554D5500975559 /* TrioWatch.app */,
+				38E8752427554D5700975559 /* TrioWatch WatchKit Extension.appex */,
+				6B1A8D172B14D91600E76752 /* TrioLiveActivityExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2267,9 +2267,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		388E595725AD948C0019842D /* FreeAPS */ = {
+		388E595725AD948C0019842D /* Trio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 388E596725AD948E0019842D /* Build configuration list for PBXNativeTarget "FreeAPS" */;
+			buildConfigurationList = 388E596725AD948E0019842D /* Build configuration list for PBXNativeTarget "Trio" */;
 			buildPhases = (
 				3811DEF525CA169200A708ED /* Swiftformat */,
 				388E595425AD948C0019842D /* Sources */,
@@ -2287,7 +2287,7 @@
 				38E8753B27554D5900975559 /* PBXTargetDependency */,
 				6B1A8D272B14D91700E76752 /* PBXTargetDependency */,
 			);
-			name = FreeAPS;
+			name = Trio;
 			packageProductDependencies = (
 				3811DE0F25C9D37700A708ED /* Swinject */,
 				38B17B6525DD90E0005CAE3D /* SwiftDate */,
@@ -2297,12 +2297,12 @@
 				B958F1B62BA0711600484851 /* MKRingProgressView */,
 			);
 			productName = FreeAPS;
-			productReference = 388E595825AD948C0019842D /* FreeAPS.app */;
+			productReference = 388E595825AD948C0019842D /* Trio.app */;
 			productType = "com.apple.product-type.application";
 		};
-		38E8751B27554D5500975559 /* FreeAPSWatch */ = {
+		38E8751B27554D5500975559 /* TrioWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38E8754427554D5900975559 /* Build configuration list for PBXNativeTarget "FreeAPSWatch" */;
+			buildConfigurationList = 38E8754427554D5900975559 /* Build configuration list for PBXNativeTarget "TrioWatch" */;
 			buildPhases = (
 				38E8751A27554D5500975559 /* Resources */,
 				38E8754027554D5900975559 /* Embed App Extensions */,
@@ -2312,14 +2312,14 @@
 			dependencies = (
 				38E8752727554D5700975559 /* PBXTargetDependency */,
 			);
-			name = FreeAPSWatch;
+			name = TrioWatch;
 			productName = FreeAPSWatch;
-			productReference = 38E8751C27554D5500975559 /* FreeAPSWatch.app */;
+			productReference = 38E8751C27554D5500975559 /* TrioWatch.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		38E8752327554D5700975559 /* FreeAPSWatch WatchKit Extension */ = {
+		38E8752327554D5700975559 /* TrioWatch WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38E8754327554D5900975559 /* Build configuration list for PBXNativeTarget "FreeAPSWatch WatchKit Extension" */;
+			buildConfigurationList = 38E8754327554D5900975559 /* Build configuration list for PBXNativeTarget "TrioWatch WatchKit Extension" */;
 			buildPhases = (
 				38E8752027554D5700975559 /* Sources */,
 				38E8752127554D5700975559 /* Frameworks */,
@@ -2329,17 +2329,17 @@
 			);
 			dependencies = (
 			);
-			name = "FreeAPSWatch WatchKit Extension";
+			name = "TrioWatch WatchKit Extension";
 			packageProductDependencies = (
 				38E8755727567AE400975559 /* SwiftDate */,
 			);
 			productName = "FreeAPSWatch WatchKit Extension";
-			productReference = 38E8752427554D5700975559 /* FreeAPSWatch WatchKit Extension.appex */;
+			productReference = 38E8752427554D5700975559 /* TrioWatch WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
-		38FCF3EC25E9028E0078B0D1 /* FreeAPSTests */ = {
+		38FCF3EC25E9028E0078B0D1 /* TrioTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38FCF3F425E9028E0078B0D1 /* Build configuration list for PBXNativeTarget "FreeAPSTests" */;
+			buildConfigurationList = 38FCF3F425E9028E0078B0D1 /* Build configuration list for PBXNativeTarget "TrioTests" */;
 			buildPhases = (
 				38FCF3E925E9028E0078B0D1 /* Sources */,
 				38FCF3EA25E9028E0078B0D1 /* Frameworks */,
@@ -2350,14 +2350,14 @@
 			dependencies = (
 				38FCF3F325E9028E0078B0D1 /* PBXTargetDependency */,
 			);
-			name = FreeAPSTests;
+			name = TrioTests;
 			productName = FreeAPSTests;
-			productReference = 38FCF3ED25E9028E0078B0D1 /* FreeAPSTests.xctest */;
+			productReference = 38FCF3ED25E9028E0078B0D1 /* TrioTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6B1A8D162B14D91500E76752 /* LiveActivityExtension */ = {
+		6B1A8D162B14D91500E76752 /* TrioLiveActivityExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B1A8D292B14D91800E76752 /* Build configuration list for PBXNativeTarget "LiveActivityExtension" */;
+			buildConfigurationList = 6B1A8D292B14D91800E76752 /* Build configuration list for PBXNativeTarget "TrioLiveActivityExtension" */;
 			buildPhases = (
 				6B1A8D132B14D91500E76752 /* Sources */,
 				6B1A8D142B14D91500E76752 /* Frameworks */,
@@ -2367,9 +2367,9 @@
 			);
 			dependencies = (
 			);
-			name = LiveActivityExtension;
+			name = TrioLiveActivityExtension;
 			productName = LiveActivityExtension;
-			productReference = 6B1A8D172B14D91600E76752 /* LiveActivityExtension.appex */;
+			productReference = 6B1A8D172B14D91600E76752 /* TrioLiveActivityExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -2438,11 +2438,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				388E595725AD948C0019842D /* FreeAPS */,
-				38FCF3EC25E9028E0078B0D1 /* FreeAPSTests */,
-				38E8751B27554D5500975559 /* FreeAPSWatch */,
-				38E8752327554D5700975559 /* FreeAPSWatch WatchKit Extension */,
-				6B1A8D162B14D91500E76752 /* LiveActivityExtension */,
+				388E595725AD948C0019842D /* Trio */,
+				38FCF3EC25E9028E0078B0D1 /* TrioTests */,
+				38E8751B27554D5500975559 /* TrioWatch */,
+				38E8752327554D5700975559 /* TrioWatch WatchKit Extension */,
+				6B1A8D162B14D91500E76752 /* TrioLiveActivityExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -2921,22 +2921,22 @@
 /* Begin PBXTargetDependency section */
 		38E8752727554D5700975559 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 38E8752327554D5700975559 /* FreeAPSWatch WatchKit Extension */;
+			target = 38E8752327554D5700975559 /* TrioWatch WatchKit Extension */;
 			targetProxy = 38E8752627554D5700975559 /* PBXContainerItemProxy */;
 		};
 		38E8753B27554D5900975559 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 38E8751B27554D5500975559 /* FreeAPSWatch */;
+			target = 38E8751B27554D5500975559 /* TrioWatch */;
 			targetProxy = 38E8753A27554D5900975559 /* PBXContainerItemProxy */;
 		};
 		38FCF3F325E9028E0078B0D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 388E595725AD948C0019842D /* FreeAPS */;
+			target = 388E595725AD948C0019842D /* Trio */;
 			targetProxy = 38FCF3F225E9028E0078B0D1 /* PBXContainerItemProxy */;
 		};
 		6B1A8D272B14D91700E76752 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6B1A8D162B14D91500E76752 /* LiveActivityExtension */;
+			target = 6B1A8D162B14D91500E76752 /* TrioLiveActivityExtension */;
 			targetProxy = 6B1A8D262B14D91700E76752 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -3484,7 +3484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		388E596725AD948E0019842D /* Build configuration list for PBXNativeTarget "FreeAPS" */ = {
+		388E596725AD948E0019842D /* Build configuration list for PBXNativeTarget "Trio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				388E596825AD948E0019842D /* Debug */,
@@ -3493,7 +3493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		38E8754327554D5900975559 /* Build configuration list for PBXNativeTarget "FreeAPSWatch WatchKit Extension" */ = {
+		38E8754327554D5900975559 /* Build configuration list for PBXNativeTarget "TrioWatch WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38E8754127554D5900975559 /* Debug */,
@@ -3502,7 +3502,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		38E8754427554D5900975559 /* Build configuration list for PBXNativeTarget "FreeAPSWatch" */ = {
+		38E8754427554D5900975559 /* Build configuration list for PBXNativeTarget "TrioWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38E8753E27554D5900975559 /* Debug */,
@@ -3511,7 +3511,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		38FCF3F425E9028E0078B0D1 /* Build configuration list for PBXNativeTarget "FreeAPSTests" */ = {
+		38FCF3F425E9028E0078B0D1 /* Build configuration list for PBXNativeTarget "TrioTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38FCF3F525E9028E0078B0D1 /* Debug */,
@@ -3520,7 +3520,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		6B1A8D292B14D91800E76752 /* Build configuration list for PBXNativeTarget "LiveActivityExtension" */ = {
+		6B1A8D292B14D91800E76752 /* Build configuration list for PBXNativeTarget "TrioLiveActivityExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B1A8D2A2B14D91800E76752 /* Debug */,

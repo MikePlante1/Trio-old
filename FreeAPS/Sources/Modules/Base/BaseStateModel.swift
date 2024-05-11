@@ -11,7 +11,7 @@ protocol StateModel: ObservableObject {
     func view(for screen: Screen) -> AnyView
 }
 
-class BaseStateModel<Provider>: StateModel, Injectable where Provider: FreeAPS.Provider {
+class BaseStateModel<Provider>: StateModel, Injectable where Provider: Trio.Provider {
     @Injected() var router: Router!
     @Injected() var settingsManager: SettingsManager!
     var isInitial: Bool = true

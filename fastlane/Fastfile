@@ -130,7 +130,7 @@ platform :ios do
       path: "#{GITHUB_WORKSPACE}/FreeAPS.xcodeproj",
       profile_name: mapping["#{BUNDLE_ID}.LiveActivity"],
       code_sign_identity: "iPhone Distribution",
-      targets: ["Trio LiveActivityExtension"]
+      targets: ["TrioLiveActivityExtension"]
     )
 
     gym(
@@ -199,7 +199,7 @@ platform :ios do
       Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
     ])
 
-    configure_bundle_id("Trio LiveActivityExtension", "#{BUNDLE_ID}.LiveActivity", [
+    configure_bundle_id("TrioLiveActivityExtension", "#{BUNDLE_ID}.LiveActivity", [
       Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
     ])
     

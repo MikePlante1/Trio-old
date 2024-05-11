@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "38E8751B27554D5500975559"
-               BuildableName = "FreeAPSWatch.app"
-               BlueprintName = "FreeAPSWatch"
+               BuildableName = "TrioWatch.app"
+               BlueprintName = "TrioWatch"
                ReferencedContainer = "container:FreeAPS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "388E595725AD948C0019842D"
-               BuildableName = "FreeAPS.app"
-               BlueprintName = "FreeAPS"
+               BuildableName = "Trio.app"
+               BlueprintName = "Trio"
                ReferencedContainer = "container:FreeAPS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -60,8 +60,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "38E8751B27554D5500975559"
-            BuildableName = "FreeAPSWatch.app"
-            BlueprintName = "FreeAPSWatch"
+            BuildableName = "TrioWatch.app"
+            BlueprintName = "TrioWatch"
             ReferencedContainer = "container:FreeAPS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -77,8 +77,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "38E8751B27554D5500975559"
-            BuildableName = "FreeAPSWatch.app"
-            BlueprintName = "FreeAPSWatch"
+            BuildableName = "TrioWatch.app"
+            BlueprintName = "TrioWatch"
             ReferencedContainer = "container:FreeAPS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
