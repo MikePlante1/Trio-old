@@ -110,7 +110,7 @@ platform :ios do
       path: "#{GITHUB_WORKSPACE}/FreeAPS.xcodeproj",
       profile_name: mapping["#{BUNDLE_ID}"],
       code_sign_identity: "iPhone Distribution",
-      targets: ["FreeAPS"]
+      targets: ["Trio"]
     )
 
     update_code_signing_settings(
@@ -130,7 +130,7 @@ platform :ios do
       path: "#{GITHUB_WORKSPACE}/FreeAPS.xcodeproj",
       profile_name: mapping["#{BUNDLE_ID}.LiveActivity"],
       code_sign_identity: "iPhone Distribution",
-      targets: ["LiveActivityExtension"]
+      targets: ["Trio LiveActivityExtension"]
     )
 
     gym(
